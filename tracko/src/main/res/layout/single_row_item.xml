@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tv_person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample Data"
+        android:autoLink="web"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp" />
+
+    <TextView android:id="@+id/tv_person_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aesrtghj"
+        android:textStyle="italic"
+        android:textColor="#000"
+
+        android:textSize="12sp"
+         />
+
+    <TextView android:id="@+id/amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:paddingRight="5dp"
+        android:gravity="right"
+        android:textColor="@color/primary"
+        android:text="Rs. 5000000000000"
+        android:textSize="11sp"
+         />
+
+</LinearLayout>

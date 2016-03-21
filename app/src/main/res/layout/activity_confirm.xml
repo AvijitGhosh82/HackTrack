@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        tools:context=".DetailedPostActivity">
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:layout_marginTop="4dp"
+                            android:text=""
+                            android:id="@+id/name"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout></LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:text=""
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/addr"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/cname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer Name"
+                    android:layout_margin="8dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="10dp"
+                    />
+                <EditText
+                    android:id="@+id/seller"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Seller"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    />
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    />
+                <EditText
+                    android:id="@+id/pin"
+                    android:inputType="numberPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer Secret PIN"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    />
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:text="Confirm"
+                    android:textColor="#fff"
+                    android:background="@color/primary"
+                    android:onClick="done"
+
+                    android:id="@+id/pitch"
+                    android:layout_gravity="center|bottom" />
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>
